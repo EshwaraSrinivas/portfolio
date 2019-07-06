@@ -1,0 +1,13 @@
+<div class="technologies">
+    <h1 class="lg-heading">
+        Technologies
+    </h1>
+    <div class="tech-list">
+        <div class="tech" *ngFor="let tech of techs">
+            <h3>{{tech.type}}</h3>
+            <ul class="list">
+                <li class="list-item" *ngFor="let language of tech.languages">{{language}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

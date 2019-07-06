@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+$primary-color: #444;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(./images/background.jpg);
+$background-opacity: 0.1;
+
+* {
+    box-sizing: border-box;
+}
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+}
+
+body {
+    @include background();
+    background: $primary-color;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+

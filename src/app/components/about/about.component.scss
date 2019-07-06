@@ -1,0 +1,72 @@
+@import "../../scss//variables.scss";
+.aboutMe {
+    padding: 4rem;
+    height: 100%;
+    background: #444;
+    .lg-heading {
+        font-size: 4rem;
+    }
+    .data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2%;
+        .portrait {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: url(../../../images/portrait.jpg);
+            background-size: cover;
+            border: 2px solid $secondary-color;
+            margin: 12px 12px 12px 0px
+        }
+        .content {
+            width: 70%;
+        }
+    }
+    .jobs {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        .job {
+            width: 30%;
+            margin: 2%;
+            padding: 1%;
+            background: rgba(73, 73, 73, 1);
+        }
+    }
+}
+
+@include mediaSm; @include mediaMd {
+    .aboutMe {
+        padding: 4rem 0rem;
+        height: 100%;
+        .lg-heading {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            .portrait {
+                width: 150px;
+                height: 150px;
+            }
+            .content {
+                padding: 15px;
+                width: 100%;
+            }
+        }
+        .jobs {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            .job {
+                width: 100%;
+                margin: 2% 0%;
+                padding: 0%;
+            }
+        }
+    }
+}

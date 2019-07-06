@@ -1,0 +1,53 @@
+@import "../../scss//variables.scss";
+
+main {
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .icons {
+        margin-top: 1rem;
+        a {
+            padding: 0.4rem;
+            &:hover {
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home {
+        overflow: hidden;
+    }
+}
+
+// mobile css
+@include mediaSm {
+    main {
+        align-items: center;
+        text-align: center;
+        .lg-heading {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include mediaMd {
+    main {
+        padding: 4rem;
+    }
+}
+
+@include mediaLg {
+    main {
+        padding: 4rem;
+    }
+}
+
+@include mediaXl {
+    main {
+        padding: 4rem;
+    }
+}
+
