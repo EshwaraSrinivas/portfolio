@@ -61,7 +61,25 @@ header {
         margin: 0;
         padding: 0;
         background: darken($primary-color, 5);
-        list-style: none !important;  
+        list-style: none !important;
+        .nav-link {
+            display: inline-block;
+            background: transparent;
+            border: none;
+            outline: none;
+            position: relative;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-weight: 300;
+            color: #fff;
+            text-decoration: none;
+        }
+    
+        .nav-link:hover {
+            color: $secondary-color;
+            cursor: pointer;
+        }
     }
     &-branding {
         background: $primary-color;
@@ -73,25 +91,6 @@ header {
             background-size: cover;
             border: 2px solid $secondary-color;
         }   
-    }
-
-    .nav-link {
-        display: inline-block;
-        background: transparent;
-        border: none;
-        outline: none;
-        position: relative;
-        font-size: 24px;
-        text-transform: uppercase;
-        padding: 1rem 0;
-        font-weight: 300;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .nav-link:hover {
-        color: $secondary-color;
-        cursor: pointer;
     }
 }
 

@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:ghpages": "ng build --prod --base-href 'https://eshwarasrinivas.github.io/portfolio/'",
+    "deploy:ghpages": "ngh"
   },
   "private": true,
   "dependencies": {

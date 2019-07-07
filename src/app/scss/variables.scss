@@ -15,7 +15,7 @@ $secondary-color: #eece1a;
 }
 
 @mixin mediaMd {
-    @media screen and (max-width: 768px){
+    @media screen and (min-width: 501px) and (max-width: 768px){
         @content;
     }
 }
