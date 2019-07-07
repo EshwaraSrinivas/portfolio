@@ -5,36 +5,38 @@
         <div class="btn-line"></div>
     </div>
 
-    <ng-container class="menu" *ngIf="showMenu">
-        <div class="menu-branding" [@portrait]="showMenu ? 'open' : 'closed'">
-            <div class="portrait"></div>
+    <ng-container *ngIf="showMenu">
+        <div class="menu">
+            <div class="menu-branding" [@portrait]="showMenu ? 'open' : 'closed'">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav" [@navigation]="showMenu ? 'open' : 'closed'">
+                <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
+                    <button (click)="navigate('/home')" class="nav-link">
+                        Home
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button (click)="navigate('/about')" class="nav-link">
+                        About Me
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
+                    <button (click)="navigate('/work')" class="nav-link">
+                        My Work
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
+                    <button (click)="navigate('/technologies')" class="nav-link">
+                        Tech Stuff
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
+                    <button (click)="navigate('/contact')" class="nav-link">
+                        How to Reach Me
+                    </button>
+                </li>
+            </ul>
         </div>
-        <ul class="menu-nav" [@navigation]="showMenu ? 'open' : 'closed'">
-            <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
-                <button (click)="navigate('/home')" class="nav-link">
-                    Home
-                </button>
-            </li>
-            <li class="nav-item">
-                <button (click)="navigate('/about')" class="nav-link">
-                    About Me
-                </button>
-            </li>
-            <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
-                <button (click)="navigate('/work')" class="nav-link">
-                    My Work
-                </button>
-            </li>
-            <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
-                <button (click)="navigate('/technologies')" class="nav-link">
-                    Tech Stuff
-                </button>
-            </li>
-            <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
-                <button (click)="navigate('/contact')" class="nav-link">
-                    How to Reach Me
-                </button>
-            </li>
-        </ul>
     </ng-container>
 </header>

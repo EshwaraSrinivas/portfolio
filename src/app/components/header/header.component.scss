@@ -115,3 +115,14 @@ header {
         }
     }
 }
+
+@include mediaMd {
+    .menu {
+        .menu-branding {
+            .portrait {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
