@@ -1,8 +1,19 @@
 .work {
     padding: 4rem;
-    height: 100vh;
+    height: 100%;
     background: #444;
     .lg-heading {
         font-size: 4rem;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .project {
+            width: 46%;
+            margin: 2%;
+            padding: 1%;
+            background: rgba(73, 73, 73, 1);
+        }
     }
 }

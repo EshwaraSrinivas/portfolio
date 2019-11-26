@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Projects } from '../../data/projects';
+import Project from '../models/project';
 
 @Component({
   selector: 'app-work',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
-
+  projects: Project[];
   constructor() { }
 
   ngOnInit() {
+    this.projects = Projects.data;
   }
 
 }

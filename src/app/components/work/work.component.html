@@ -1,5 +1,12 @@
 <div class="work">
     <h1 class="lg-heading">
-        My <span class="text-secondary">Work</span>
+        My <span class="text-secondary">Projects</span>
     </h1>
+    <div class="projects">
+        <div class="project" *ngFor="let project of projects">
+            <h3 class="text-secondary">{{project.name}}</h3>
+            <h5>{{project.technologies}}</h5>
+            <p class="description">{{project.description}}</p>
+        </div>
+    </div>
 </div>
