@@ -14,7 +14,7 @@ export class Jobs {
         {
             companyName: 'MONSANTO',
             role: 'Senior Software Engineer',
-            description: 'Worked on an angular project called Incubator. Currently working on multiple React & Redux projects.'
+            description: 'Worked on an angular project called Incubator and an end-to-end IT-Toolbox application using JAVA & ANGULAR. Currently working on multiple React & Redux projects.'
         }
 
     ];

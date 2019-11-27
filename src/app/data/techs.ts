@@ -32,6 +32,17 @@ export class Techs {
                 'SQL',
                 'MONGODB',
             ]
+        },
+        {
+            type: 'CI/CD TOOLS',
+            languages: [
+                'GIT',
+                'JENKINS',
+                'CLOUD FOUNDRY',
+                'DOCKER',
+                'AWS EC2',
+                'AWS FARGATE'
+            ]
         }
     ]
 }

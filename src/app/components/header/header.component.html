@@ -1,5 +1,5 @@
 <header>
-    <div class="menu-btn" (mouseenter)="showmenu()" [ngClass]="showMenu ? 'close' : ''">
+    <div class="menu-btn" (mouseenter)="showmenu()" (click)="showmenu()" [ngClass]="showMenu ? 'close' : ''">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -28,7 +28,7 @@
                 </li>
                 <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">
                     <button (click)="navigate('/technologies')" class="nav-link">
-                        Tech Stuff
+                        Technologies
                     </button>
                 </li>
                 <li class="nav-item" [ngClass]="showMenu ? 'show' : ''">

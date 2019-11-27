@@ -8,7 +8,7 @@ export class Projects {
     },
     {
       name: 'IT TOOLBOX',
-      technologies: 'NODE, ANGULAR PWA, TYPESCRIPT, WEBPACK, JAVA, SPRING BOOT, REST, POSTGRESQL',
+      technologies: 'NODE, ANGULAR PWA, TYPESCRIPT, WEBPACK, JAVA, SPRING BOOT, REST, HIBERNATE, POSTGRESQL',
       description: 'This app provides an easy way to access all the apps in Breeding IT. There is an option to add the new apps which is managed by the our solutions team. Main advantage of this app is the user need not to bookmark/save all the apps URLs'
     },
     {
